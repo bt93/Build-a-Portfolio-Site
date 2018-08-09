@@ -8,7 +8,63 @@ body {
 	font-family: Verdana, Geneva, sans-serif;
 }
 
-/* Images */
+.main {
+	display: flex;
+}
+
+a {
+	text-decoration: none;
+}
+
+/* Class Selectors */
+
+.header {
+	display: flex;
+	margin-bottom: 1em;
+}
+
+.name {
+	font-size: .55em;
+	text-align: right;
+}
+
+.featured {
+	display: flex;
+}
+
+.appify,
+.sunflower,
+.bokeh {
+	text-align: center;
+}
+
+/* Images stlyes */
+
 .udacity-logo {
 	height: 50px;
+	padding-right: 90px 
+}
+
+.opener img {
+	padding-right: 10%;
+	padding-left: 10%;
+	width: 100%;
+}
+
+.appify img {
+	padding-right: 10%;
+	padding-left: 10%;
+	width: 100%;
+}
+
+.sunflower img {
+	padding-right: 10%;
+	padding-left: 10%;
+	width: 100%;
+}
+
+.bokeh img {
+	padding-right: 10%;
+	padding-left: 10%;
+	width: 100%;
 }
