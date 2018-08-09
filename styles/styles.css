@@ -1,0 +1,14 @@
+/* Base Styles */
+
+* {
+	box-sizing: border-box;
+}
+
+body {
+	font-family: Verdana, Geneva, sans-serif;
+}
+
+/* Images */
+.udacity-logo {
+	height: 50px;
+}
