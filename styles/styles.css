@@ -6,14 +6,24 @@
 
 body {
 	font-family: Verdana, Geneva, sans-serif;
+	color: #7d97ad;
 }
 
-.main {
-	display: flex;
+main h4 {
+	color: #7d97ad;
 }
 
 a {
 	text-decoration: none;
+	color: black;
+}
+
+a:hover {
+	color: #2b3c49;
+}
+
+a:visited {
+	color: #02b3e4;
 }
 
 /* Class Selectors */
@@ -21,15 +31,20 @@ a {
 .header {
 	display: flex;
 	margin-bottom: 1em;
+	justify-content: space-between;
+	width: 90%;
+	padding-left: 10%;
+	border-bottom: 2px solid #7d97ad;
 }
 
-.name {
+.header .name {
 	font-size: .55em;
 	text-align: right;
 }
 
 .featured {
 	display: flex;
+	flex-direction: column;
 }
 
 .appify,
@@ -37,6 +52,7 @@ a {
 .bokeh {
 	text-align: center;
 }
+
 
 /* Images stlyes */
 
@@ -54,17 +70,57 @@ a {
 .appify img {
 	padding-right: 10%;
 	padding-left: 10%;
-	width: 100%;
+	width: 50%;
+	border: .7px solid #7d97ad;
 }
 
 .sunflower img {
 	padding-right: 10%;
 	padding-left: 10%;
-	width: 100%;
+	width: 50%;
 }
 
 .bokeh img {
 	padding-right: 10%;
 	padding-left: 10%;
-	width: 100%;
+	width: 50%;
+}
+
+/* Media Queries */
+
+/* iPads (portrait and landscape) ----------- */
+@media screen and (min-width : 768px) {
+	.featured {
+		display: flex;
+		flex-direction: row;
+		height: 100%;
+	}
+	
+	.appify {
+		width: 33.33%;
+		order: 1;
+	}
+
+	.sunflower {
+		width: 33.33%;
+		order: 2;
+	}
+
+	.bokeh {
+		width: 33.33%;
+		order: 3;
+	}
+
+	.featured img {
+		width: 100%;
+		height: 60%;
+	}
+}
+
+@media screen and (min-width: 890px) {
+	body {
+		width: 99%;
+		padding-right: 10%;
+		padding-left: 10%;
+	}
 }
